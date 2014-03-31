@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+        maximum-scale=1, user-scalable=no">
+    <title>Speed Arithmetic</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- TODO: Put icon -->
+    <!-- <link rel="shortcut icon" sizes="196x196" href="/icon.png"> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/shuffle.js"></script>
+    <script type="text/javascript" src="/js/speedarithmetic.js"></script>
+</head>
+
+<body>
+<div class="container-fluid" id="exercise-selection">
+    <div class="row">
+        <select class="form-control" id="exercise"></select>
+    </div>
+    <div class="row">
+        <div class="col-xs-6"><h2 class="operator"></h2></div>
+        <div class="col-xs-6"><h2 class="number"></h2></div>
+    </div>
+    <div class="row">
+        <button class="btn btn-primary col-xs-12" id="start-button">Start</button>
+    </div>
+</div>
+<div class="container-fluid" id="exercise-screen">
+    <div class="row">
+        <div class="col-xs-12"><h2 style="text-align:center" id="exercise-title"></h2></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4"><h2 class="operator"></h2></div>
+        <div class="col-xs-4"><h2 class="number"></h2></div>
+        <div class="col-xs-4"><h2 id="done-count"></h2></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6"><h2 id="exercise-data"></h2></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12"><h1 class="text-center" id="data-number"></h1></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12"><input disabled class="form-control" id="answer-bar"
+            type="text" style="text-align:right"> </input></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4"><button class="btn btn-primary col-xs-12 numkey
+                btn-large" id="num-1">1</button></div>
+        <div class="col-xs-4"><button class="btn btn-primary col-xs-12 numkey
+                btn-large" id="num-2">2</button></div>
+        <div class="col-xs-4"><button class="btn btn-primary col-xs-12 numkey
+                btn-large" id="num-3">3</button></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4"><button class="btn btn-primary col-xs-12 numkey
+                btn-large" id="num-4">4</button></div>
+        <div class="col-xs-4"><button class="btn btn-primary col-xs-12 numkey
+                btn-large" id="num-5">5</button></div>
+        <div class="col-xs-4"><button class="btn btn-primary col-xs-12 numkey
+                btn-large" id="num-6">6</button></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4"><button class="btn btn-primary col-xs-12 numkey
+                btn-large" id="num-7">7</button></div>
+        <div class="col-xs-4"><button class="btn btn-primary col-xs-12 numkey
+                btn-large" id="num-8">8</button></div>
+        <div class="col-xs-4"><button class="btn btn-primary col-xs-12 numkey
+                btn-large" id="num-9">9</button></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4"><button class="btn btn-primary col-xs-12 btn-lg" id="num-backspace">↤</button></div>
+        <div class="col-xs-4"><button class="btn btn-primary col-xs-12 numkey
+                btn-lg" id="num-0">0</button></div>
+        <div class="col-xs-4"><button class="btn btn-primary col-xs-12 btn-lg"
+                id="num-submit">Submit</button></div>
+    </div>
+</div>
+</body>
+</div>
+</body>
+</html>
