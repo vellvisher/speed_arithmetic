@@ -1,0 +1,6 @@
+#exercise-selection {
+    top: 50%;
+    position: fixed;
+    width: 100%;
+    background-color: gray;
+}
